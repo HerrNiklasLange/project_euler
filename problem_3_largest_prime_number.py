@@ -16,9 +16,7 @@ def find_factor(number):
     x = 0
     num = 0
     tracker = 0 
-    count = 0
     factors = []
-    end = False
 
     for index in range(number):
         x = 1 + x
