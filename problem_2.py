@@ -1,15 +1,29 @@
-# This finds the sum of all the multiples of 3 or 5 below 1000
+from calendar import c
 from sqlalchemy import false
 
-def multiple_of_3_5(n):
-    if n % 3 == 0 or n % 5 == 0:
+
+def even_numbers(n):
+    if n % 2 == 0:
         return True;
     return False
 def main():
+    over_2million = False
     sum = 0
-    for index in range(1,1000):
-        if multiple_of_3_5(index):
-            print(index)
-            sum += index
-    print(sum)
+    a = 1
+    b = 1
+    c = 1
+    while over_2million == False:
+        a = b + c
+        d = b
+        b = a
+        c = d
+        
+        if even_numbers(a):
+            
+            sum += a
+            print(sum)
+        if a > 2000001:
+            print(sum)
+            break
+
 main()
