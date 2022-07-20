@@ -1,7 +1,7 @@
 from calendar import c
 from sqlalchemy import false
 
-
+#work in progress
 def even_numbers(n):
     if n % 2 == 0:
         return True;
@@ -19,10 +19,11 @@ def main():
         c = d
         
         if even_numbers(a):
-            
             sum += a
-            print(sum)
-        if a > 2000001:
+            print(a, ", ", sum)
+        print(a)
+        print(c)
+        if a > 4000000:
             print(sum)
             break
 
