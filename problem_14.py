@@ -7,7 +7,7 @@ def odd(n):
 def even(n):
     n = n/2
     return n
-
+# not solved
 def main():
     longest_chain = 0
     longest_chain_starting = 0
