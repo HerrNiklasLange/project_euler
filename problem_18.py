@@ -25,5 +25,6 @@ def main():
                 sum += x[1]
         elif len(x) % 2 != 0:
             if x[position_sum + .5] > x[position_sum - .5]:
-                
-main()
+                x
+            
+#main()
